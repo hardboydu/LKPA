@@ -81,9 +81,11 @@
 
 &emsp;&emsp;使用以下代码就可以允许分页（AT＆T汇编语言参考2.5节）：
 
+```asm
     movl %cr0, %eax
     orl  $0x80000000, %eax
     movl %eax, %cr0
+```
 
 &emsp;&emsp;CR1是未定义的控制寄存器，供将来的处理器使用。
 
